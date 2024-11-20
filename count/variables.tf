@@ -1,0 +1,14 @@
+variable "instance_names" {
+    type = list(string)
+    default = ["mysql","backend","frontend"]
+}
+
+#functions
+variable "common_tags" {
+    type = map
+    default = {
+        project = "expense"
+        Environment = "dev"
+        Terraform = "true"
+    }
+}
