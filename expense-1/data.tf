@@ -1,10 +1,10 @@
 data "aws_ami" "ami_info" {
-  most_recent      = true
-  owners           = ["self"]
+  most_recent = true
+  owners      = ["97371446881"]
 
   filter {
     name   = "name"
-    values = ["myami-*"]
+    values = ["RHEL-9-DevOps-practice"]
   }
 
   filter {
