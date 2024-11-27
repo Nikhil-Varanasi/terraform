@@ -9,7 +9,7 @@ resource "aws_instance" "terraform" {
 }
 
 resource "aws_security_group" "allow_ssh_terraform" {
-  name        = "allow_ssh"
+  name        = "allow_sshh"
   description = "Allow port number 22 for ssh access"
 
   #usally we allow every thing in egress
@@ -31,6 +31,6 @@ resource "aws_security_group" "allow_ssh_terraform" {
     ipv6_cidr_blocks = ["::/0"]
   }
   tags = {
-    Name = "alow_ssh"
+    Name = "alow_sshh"
   }
 }
